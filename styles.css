@@ -1,0 +1,52 @@
+/*
+*Room Layout
+*/
+
+#roomContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 400px;
+}
+
+#roomContainer > div{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#room1{
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+#room2{
+    grid-row: 1/1;
+    grid-column: 2/2;
+}
+
+#room3{
+    grid-row: 1/1;
+    grid-column: 3/3;
+}
+
+#room4{
+    grid-row: 2/2;
+    grid-column: 1/1;
+}
+
+#room5{
+    grid-row: 3/3;
+    grid-column: 1/1;
+}
+
+#room6{
+    grid-row: 3/3;
+    grid-column: 2/2;
+
+}
+
+#room7{
+    grid-row: 3/3;
+    grid-column: 3/3;
+}
