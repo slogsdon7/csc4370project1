@@ -1,24 +1,53 @@
+
+/* Page layout */
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 2em;
+    position: relative;
+
+    min-height: 100vh;
+}
 /*
-*Room Layout
+Main layout & styles
 */
+
+main{
+    margin: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:3fr 2fr 1fr;
+    justify-content: start;
+}
+div#roomDetail{
+    border: solid 1px black ;
+
+}
+/*
+*Room map layout & styles
+*/
+
 
 #roomContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 400px;
+    width: 80%;
 }
 
-#roomContainer > div{
+.room{
     border: solid 2px black;
-    box-sizing: border-box;
 }
-div#room1{
+div.room:hover,
+div.room:focus{
+    background-color: green;
+}
+#room1{
     grid-row: 1/1;
     grid-column: 1/1;
 }
 
-div#room2{
+#room2{
     grid-row: 1/1;
     grid-column: 2/2;
     border-right: none;
@@ -26,12 +55,12 @@ div#room2{
 
 }
 
-div#room3{
+#room3{
     grid-row: 1/1;
     grid-column: 3/3;
 }
 
-div#room4{
+#room4{
     grid-row: 2/2;
     grid-column: 1/1;
     border-top: none;
@@ -40,13 +69,13 @@ div#room4{
 
 }
 
-div#room5{
+#room5{
     grid-row: 3/3;
     grid-column: 1/1;
 
 }
 
-div#room6{
+#room6{
     grid-row: 3/3;
     grid-column: 2/2;
     border-right: none;
@@ -54,7 +83,7 @@ div#room6{
 
 }
 
-div#room7{
+#room7{
     grid-row: 3/3;
     grid-column: 3/3;
 }
