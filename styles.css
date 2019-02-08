@@ -10,43 +10,51 @@
 }
 
 #roomContainer > div{
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border: solid 2px black;
+    box-sizing: border-box;
 }
-
-#room1{
+div#room1{
     grid-row: 1/1;
     grid-column: 1/1;
 }
 
-#room2{
+div#room2{
     grid-row: 1/1;
     grid-column: 2/2;
+    border-right: none;
+    border-left: none;
+
 }
 
-#room3{
+div#room3{
     grid-row: 1/1;
     grid-column: 3/3;
 }
 
-#room4{
+div#room4{
     grid-row: 2/2;
     grid-column: 1/1;
+    border-top: none;
+    border-bottom: none;
+   
+
 }
 
-#room5{
+div#room5{
     grid-row: 3/3;
     grid-column: 1/1;
+
 }
 
-#room6{
+div#room6{
     grid-row: 3/3;
     grid-column: 2/2;
+    border-right: none;
+    border-left: none;
 
 }
 
-#room7{
+div#room7{
     grid-row: 3/3;
     grid-column: 3/3;
 }
