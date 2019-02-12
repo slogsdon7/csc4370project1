@@ -28,6 +28,10 @@ h3{
     grid-row: 2/2;
     grid-column: 1/1;
 }
+#form{
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
 /*
 *Room map layout & styles
 */
@@ -39,7 +43,7 @@ h3{
 a{
     display: block;
     height: 100%;
-    widght: 100%;
+    width: 100%;
 }
 #roomContainer{
     display: grid;
