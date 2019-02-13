@@ -1,17 +1,30 @@
 html{
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* Page layout */
+header{
+    background-color: #0039A6;
+    color: white;
+    padding-left: 1em;
+}
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 2em;
+    grid-template-rows: 2fr 18fr 1.5em;
     position: relative;
-
+    padding: 0;
+    margin: 0;
     min-height: 100vh;
-    background-color: beige;
+    max-height: 100vh;
+    background-color: white;
+}
+footer{
+    background-color: #cc0000;
+    padding-left: 1em;
+    color: white;
 }
 /*
 Main layout & styles
@@ -46,39 +59,12 @@ h3{
 *Room map layout & styles
 */
 
-.active{
-    background-color: green;
-}
 
-a{
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    font-size: 2em;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-}
-
-a:link{
-    color: black;
-}
-a:visited{
-    color: black;
-}
 #roomContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 80%;
-}
-
-.room{
-    border: solid 2px black;
-}
-div.room:hover,
-div.room:focus{
-    background-color: green;
 }
 #room1{
     grid-row: 1/1;
@@ -125,3 +111,28 @@ div.room:focus{
     grid-row: 3/3;
     grid-column: 3/3;
 }
+
+.room{
+    border: solid 2px black;
+}
+div.room a:hover,
+div.room a:focus{
+    background-color: #0039A6;
+    color: white;
+}
+
+div.room a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 2em;
+    text-decoration: none !important;
+}
+
+
+
+.active{
+    background-color: #0039A6;
+    color: white;
+}
+
